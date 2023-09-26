@@ -25,7 +25,12 @@ function App() {
                 "isComing":isComing === null ? 'לא יודע עדיין' : isComing,
                 "special": special};
   var url = 'https://sheet2api.com/v1/Z3JozeTrR6K5/-/';
-  axios.post(url, data).then((response) => {
+  axios.post(url, data,{
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: '*/*'
+    },
+}).then((response) => {
     console.log(response.status);
   });
   }
