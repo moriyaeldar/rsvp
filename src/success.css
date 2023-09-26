@@ -1,0 +1,10 @@
+.success{
+        text-align: center;
+        font-family: SuezOne-Regular;
+      }
+      @font-face { font-family: SuezOne-Regular; 
+        src: url('./SuezOne-Regular.ttf'); } 
+h1{
+    font-size: 4rem;
+    letter-spacing: 5px;
+}
