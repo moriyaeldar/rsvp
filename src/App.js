@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import axios from "axios";
 import logo from './logo.png';
 import wedding from './wedding.jpeg';
 import {AiOutlinePlusCircle,AiOutlineMinusCircle} from 'react-icons/ai'
@@ -23,23 +24,10 @@ function App() {
                 "phone":phone,
                 "isComing":isComing === null ? 'לא יודע עדיין' : isComing,
                 "special": special};
-console.log(data)
   var url = 'https://sheet2api.com/v1/Z3JozeTrR6K5/-/';
-fetch(url, {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    Accept: '*/*'
-  },
-  body: JSON.stringify(data),
-})
-.then(response => response.json())
-.then(data => {
-  console.log('Success:', data);
-})
-.catch((error) => {
-  console.error('Error:', error);
-});
+  axios.post(url, data).then((response) => {
+    console.log(response.status);
+  });
   }
 
   return (
