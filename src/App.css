@@ -85,9 +85,16 @@ input{
   padding:10px;
   border:0;
   border-radius: 8px;
-  box-shadow: 0 0 15px 8px rgba(11, 11, 11, 0.06); 
+  box-shadow: 0 0 15px 8px #e4eded;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-
+select{
+  height: 6px;
+  padding:10px;
+  border-radius: 8px;
+}
 button{
   margin: 1%;
   align-items: center;
@@ -144,6 +151,10 @@ border-radius: 50px;
 }
 .red{
   background-color: red;
+  border-radius: 50px;
+}
+.grey{
+  background-color: grey;
   border-radius: 50px;
 }
 .white{
