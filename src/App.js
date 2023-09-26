@@ -15,6 +15,9 @@ function App() {
   const [amount, setAmount] = useState(0);
   const [isComing, setIsComing] = useState(null);
 
+const Axios = axios.create({
+  withCredentials: true});
+  
 	const  handleChange = (event,type) => {
 		type === 'name' ? setName(event?.target?.value) : setPhone(event?.target?.value)
 	};
@@ -25,7 +28,7 @@ function App() {
                 "isComing":isComing === null ? 'לא יודע עדיין' : isComing,
                 "special": special};
   var url = 'https://sheet2api.com/v1/Z3JozeTrR6K5/-/';
-  axios.post(url, data,{
+  Axios.post(url, data,{
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
       Accept: '*/*'
