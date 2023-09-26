@@ -4,7 +4,7 @@
 }
 @font-face { font-family: SuezOne-Regular; 
   src: url('./SuezOne-Regular.ttf'); } 
-  
+
 .wedding-invite{
   background-color: #e4eded;
   width: 100%;
@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .confirmation{
 display: flex;
@@ -33,6 +33,7 @@ cursor: pointer;
 
 span{
   margin-bottom: 2%;
+  font-size: 1.2rem;
 }
 .column{
   display: flex;
@@ -50,7 +51,7 @@ span{
 }
 label{
   margin-bottom: 2%;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 h5{
   font-size: 1rem;
@@ -75,7 +76,7 @@ h5{
 }
 .amount{
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 }
 .amount-num{
   margin: 2%;
@@ -110,9 +111,9 @@ button{
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;
-  font-size: 14px;
+  font-size: 1.2rem;
   font-weight: 500;
+  font-family: SuezOne-Regular;
   height: 48px;
   justify-content: center;
   letter-spacing: .25px;

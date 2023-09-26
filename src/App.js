@@ -13,7 +13,7 @@ function App() {
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
   const [special, setSpecial] = useState("אין צורך באוכל מיוחד");
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(1);
   const [isComing, setIsComing] = useState(null);
 
 const Axios = axios.create({
@@ -54,9 +54,9 @@ navigate("/success");
          <img src={wedding} className="wedding-invite-img" alt="הזמנה"></img>
         </div>
         <div className="invite-txt">
-        <span>אור ממן ואוריאל זילברברג מתרגשים להזמינכם לחגוג את יום שמחתם</span>
-        <span>ביום שלישי ה-09/10/2023
-        </span>כנות , Laraב
+        <div>אור ממן ואוריאל זילברברג מתרגשים להזמינכם לחגוג את יום שמחתם</div>
+        <div>ביום שלישי ה-09/10/2023
+        </div>כנות , Laraב
         </div>
       </header> 
      <img src={logo} className="App-logo" alt="logo" />
@@ -100,7 +100,6 @@ navigate("/success");
             <CgCloseO className={!isComing&& isComing !== null ? 'red' :'white' }/>
           <span>לא מגיע/ה</span> 
           </div>
-          
         </div> 
          <button>שליחה</button>
         </form>
