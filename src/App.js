@@ -27,7 +27,7 @@ function App() {
   var url = 'https://sheet2api.com/v1/Z3JozeTrR6K5/-/';
   axios.post(url, data,{
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/x-www-form-urlencoded',
       Accept: '*/*'
     },
 }).then((response) => {
