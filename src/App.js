@@ -55,7 +55,7 @@ navigate("/success");
         </div>
         <div className="invite-txt">
         <div>אור ממן ואוריאל זילברברג מתרגשים להזמינכם לחגוג את יום שמחתם</div>
-        <div>ביום שלישי ה-09/10/2023
+        <div>ביום שני ה-09/10/2023
         </div>כנות , Laraב
         </div>
       </header> 
